@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 perem = []
 date_up = []
 count = True
-while count
+while count:
     url = f'https://stackoverflow.com/questions/tagged/python?tab=newest&page={count}&pagesize=15'
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'lxml')
